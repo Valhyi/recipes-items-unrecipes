@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+
+modId="recipes_items"
+version="1.0.0"
+displayName="Recipes Items"
+displayURL="-"
+credits="Valhyi"
+authors="Valhyi"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.recipes_items]]
+    modId="neoforge"
+    type="required"
+    versionRange="[26.2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.recipes_items]]
+    modId="minecraft"
+    type="required"
+    versionRange="[26.2]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
+

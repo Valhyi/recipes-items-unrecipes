@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#S#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:magma_cream",
+    "S": "minecraft:soul_lantern"
+  },
+  "result": {
+    "id": "minecraft:pearlescent_froglight"
+  }
+}

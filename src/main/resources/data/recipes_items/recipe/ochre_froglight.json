@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#L#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:magma_cream",
+    "L": "minecraft:lantern"
+  },
+  "result": {
+    "id": "minecraft:ochre_froglight"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#C#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:magma_cream",
+    "C": "minecraft:copper_lantern"
+  },
+  "result": {
+    "id": "minecraft:verdant_froglight"
+  }
+}
