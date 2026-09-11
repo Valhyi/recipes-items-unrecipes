@@ -1,0 +1,31 @@
+name: Build Mod Jar
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Package jar
+        run: |
+          mkdir -p build
+          cd src/main/resources
+          zip -r ../../../build/recipes_items-1.0.0.jar . -x ".*"
+          cd ../../..
+          echo "Contenido del jar:"
+          unzip -l build/recipes_items-1.0.0.jar
+
+      - name: Upload jar artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: recipes-items-jar
+          path: build/*.jar
